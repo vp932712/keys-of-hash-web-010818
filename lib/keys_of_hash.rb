@@ -1,13 +1,13 @@
 class Hash
   def keys_of(*arguments)
-    arr = []
+    finalArr = []
     arguments.each do |arg|
       self.each do |key, val|
         if arg == val
-          arr.push(key)
+          finalArr.push(key)
         end
       end
     end
-    arr
+    finalArr
   end
 end
